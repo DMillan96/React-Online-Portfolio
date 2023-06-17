@@ -8,7 +8,6 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 export const Footer = () => {
   const social_media_links = {
     linked_in: "https://www.linkedin.com/in/daniel-millan/",
-    linked_in: "https://www.linkedin.com/in/daniel-millan/",
   };
 
   const date = new Date();
