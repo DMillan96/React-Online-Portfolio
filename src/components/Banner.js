@@ -4,6 +4,7 @@ import headerImg from "../assets/img/headshot-selfie.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import bannerBG from "../assets/img/bg-02-free-img.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -19,6 +20,17 @@ export const Banner = () => {
   ];
   const period = 250;
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 1200) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -28,6 +40,8 @@ export const Banner = () => {
       clearInterval(ticker);
     };
   }, [text]);
+
+  window.addEventListener("resize", handleResize);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -58,6 +72,7 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
+      {/*<img className="banner-bg" src={bannerBG} alt="light" />*/}
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
@@ -80,6 +95,23 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
+                  {isMobile && (
+                    <TrackVisibility>
+                      {({ isVisible }) => (
+                        <div
+                          className={
+                            isVisible ? "animate__animated animate__zoomIn" : ""
+                          }
+                        >
+                          <img
+                            className="profile-pic"
+                            src={headerImg}
+                            alt="Header Img"
+                          />
+                        </div>
+                      )}
+                    </TrackVisibility>
+                  )}
                   <p>
                     I am an enthusiastic web developer based in Massachusetts,
                     with a solid experience of over 5 years in Full-Stack
@@ -96,19 +128,25 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={headerImg} alt="Header Img" />
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
+          {!isMobile && (
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__zoomIn" : ""
+                    }
+                  >
+                    <img
+                      className="profile-pic"
+                      src={headerImg}
+                      alt="Header Img"
+                    />
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+          )}
         </Row>
       </Container>
     </section>

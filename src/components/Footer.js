@@ -9,6 +9,7 @@ import footerBG from "../assets/img/footer-bg.png";
 export const Footer = () => {
   const social_media_links = {
     linked_in: "https://www.linkedin.com/in/daniel-millan/",
+    instagram: "https://www.instagram.com/dmillart/",
   };
 
   const date = new Date();
@@ -26,14 +27,14 @@ export const Footer = () => {
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a
-                href="https://www.linkedin.com/in/daniel-millan/"
+                href={social_media_links.linked_in}
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src={navIcon1} alt="Icon" />
               </a>
               <a
-                href="https://www.instagram.com/dmillart/"
+                href={social_media_links.instagram}
                 target="_blank"
                 rel="noreferrer"
               >

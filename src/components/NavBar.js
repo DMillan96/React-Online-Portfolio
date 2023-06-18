@@ -8,6 +8,11 @@ import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
+  const social_media_links = {
+    linked_in: "https://www.linkedin.com/in/daniel-millan/",
+    instagram: "https://www.instagram.com/dmillart/",
+  };
+
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -83,14 +88,14 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a
-                  href="https://www.linkedin.com/in/daniel-millan/"
+                  href={social_media_links.linked_in}
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={navIcon1} alt="" />
                 </a>
                 <a
-                  href="https://www.instagram.com/dmillart/"
+                  href={social_media_links.instagram}
                   target="_blank"
                   rel="noreferrer"
                 >
