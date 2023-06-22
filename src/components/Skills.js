@@ -9,11 +9,12 @@ import html from "../assets/img/ProgrammingLanguageIcons/html.png";
 import css from "../assets/img/ProgrammingLanguageIcons/css.png";
 import js from "../assets/img/ProgrammingLanguageIcons/javascript.png";
 import react from "../assets/img/ProgrammingLanguageIcons/react.png";
-import node from "../assets/img/ProgrammingLanguageIcons/nodejs.png";
+import node from "../assets/img/ProgrammingLanguageIcons/nodejs-white.png";
+import SASS from "../assets/img/ProgrammingLanguageIcons/Sass.png";
 import next from "../assets/img/ProgrammingLanguageIcons/nextjs.png";
 import java from "../assets/img/ProgrammingLanguageIcons/java.png";
 import aspnet from "../assets/img/ProgrammingLanguageIcons/aspnet.png";
-import postgresql from "../assets/img/ProgrammingLanguageIcons/postgresql.svg";
+import postgresql from "../assets/img/ProgrammingLanguageIcons/Postgresql_elephant.png";
 import cplusplus from "../assets/img/ProgrammingLanguageIcons/c++.png";
 import csharp from "../assets/img/ProgrammingLanguageIcons/csharp.png";
 
@@ -98,6 +99,11 @@ export const Skills = () => {
       src: next,
       title: "Next.js",
     },
+    {
+      id: "sass",
+      src: SASS,
+      title: "SASS",
+    },
   ];
 
   return (
@@ -130,7 +136,11 @@ export const Skills = () => {
                       <div className="technology">
                         <div>
                           <h5> {title} </h5>
-                          <img src={src} alt={title}></img>
+                          <img
+                            src={src}
+                            alt={title}
+                            className={id.includes("node") ? "node" : ""}
+                          ></img>
                         </div>
                       </div>
                     );
