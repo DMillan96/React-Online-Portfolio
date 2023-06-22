@@ -7,34 +7,26 @@ export const Resume = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h2>My Experience</h2>
-                  <Row>
-                    <Col size={12} sm={6} className="px-1">
-                      poop
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      poop
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      poop
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      poop
-                    </Col>
-                    <Col size={12} className="px-1">
-                      poop
-                    </Col>
-                  </Row>
-                </div>
-              )}
-            </TrackVisibility>
+            <div>
+              <h2>My Experience</h2>
+              <Row>
+                <Col size={12} sm={6} className="px-1">
+                  poop
+                </Col>
+                <Col size={12} sm={6} className="px-1">
+                  poop
+                </Col>
+                <Col size={12} sm={6} className="px-1">
+                  poop
+                </Col>
+                <Col size={12} sm={6} className="px-1">
+                  poop
+                </Col>
+                <Col size={12} className="px-1">
+                  poop
+                </Col>
+              </Row>
+            </div>
           </Col>
         </Row>
       </Container>

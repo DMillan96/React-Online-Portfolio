@@ -74,7 +74,9 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Logos</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Graphic Design</Nav.Link>
+                        <Nav.Link eventKey="third">
+                          Social Media Design
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content

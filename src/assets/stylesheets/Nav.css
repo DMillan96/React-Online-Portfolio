@@ -29,7 +29,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link {
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
-  color: black;
+  color: #24252a;
   padding: 10px 0px;
   margin: 0px 25px;
   border-bottom: solid 2px transparent;
@@ -71,7 +71,7 @@ span.navbar-text {
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: black;
+  background-color: #24252a;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -92,7 +92,7 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: black;
+  color: #24252a;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -108,7 +108,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: black;
+  background-color: #24252a;
   left: 0;
   top: 0;
   z-index: -1;
@@ -116,7 +116,7 @@ span.navbar-text {
 }
 .navbar-text button:hover {
   color: white;
-  background-color: black;
+  background-color: #24252a;
 }
 
 nav.navbar .navbar-toggler:active,
@@ -221,14 +221,14 @@ nav.navbar.scrolled .navbar-text button::before {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: black;
+  background-color: #24252a;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 nav.navbar.scrolled .navbar-text button:hover {
-  color: black;
+  color: #24252a;
   background-color: white;
 }
 

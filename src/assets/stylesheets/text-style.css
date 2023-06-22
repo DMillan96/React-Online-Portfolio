@@ -9,5 +9,25 @@
 }
 
 .white-text {
-  color: white;
+  color: #ffffff;
+}
+
+.light-gray-text {
+  color: #f3f6f3; /*This is the main color in the palette. It is a light grayish beige color.*/
+}
+
+.dark-beige-text {
+  color: #d9dcdc; /*This is a darker grayish beige color that can be used as a secondary color.*/
+}
+
+.dark-gray-beige-text {
+  color: #a6a9a6; /*This is a dark grayish beige color that can be used as a tertiary color.*/
+}
+
+.dark-brown-text {
+  color: #787a78; /* This is a dark brown color that can be used as an accent color. */
+}
+
+.dark-blackish-brown-text {
+  color: #434543; /*This is a dark blackish brown color that can be used as a tertiary color.*/
 }
