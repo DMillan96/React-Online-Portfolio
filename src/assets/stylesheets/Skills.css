@@ -3,6 +3,7 @@
   padding: 0 0 50px 0;
   position: relative;
   background-image: linear-gradient(#f3f6f3, #30c7b5);
+  background: linear-gradient(90.21deg, #f3f6f3 -5.91%, #c7c6b9 250%);
 }
 .skill-bx {
   background: #24252a;
@@ -10,6 +11,7 @@
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  filter: drop-shadow(0px 10px 10px #ff3333);
 }
 .skill h2 {
   font-size: 45px;
@@ -55,7 +57,7 @@
   margin: 20px;
 }
 
-.skill .skill-bx .technologies .backend-tech .technology img.node {
+.skill .skill-bx .technologies .backend-tech .technology img.java {
   background-color: #f3f6f3;
   border-radius: 50%;
   padding: 10px;

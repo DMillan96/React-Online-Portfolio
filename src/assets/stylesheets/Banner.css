@@ -2,7 +2,7 @@
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-color: #f3f6f3;
+  background: linear-gradient(90.21deg, #f3f6f3 -5.91%, #c7c6b9 250%);
 }
 
 .banner .tagline {

@@ -3,6 +3,12 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import Hulk from "../assets/img/SocialMediaRevamps/Hulk-Revamp.jpg";
+import Joker from "../assets/img/SocialMediaRevamps/Joker-Themed-D-Revamp.jpg";
+import Ninja from "../assets/img/SocialMediaRevamps/Ninjas-Revamp.jpg";
+import RedReserve from "../assets/img/SocialMediaRevamps/Red-Reserve-Twitter-Revamp.jpg";
+import Soylent from "../assets/img/SocialMediaRevamps/Soylent-Twitter-Revamp.jpg";
+import TE from "../assets/img/SocialMediaRevamps/TE-Revamp.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -38,6 +44,39 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+    },
+  ];
+
+  const SocialMediaRevamps = [
+    {
+      title: "Hulk",
+      description: `Social Media Revamp for Youtube and Twitter for a Internet Influencer who went by the name "Hulky"`,
+      imgUrl: Hulk,
+    },
+    {
+      title: "Joker",
+      description: `Social Media Revamp for Youtube and Twitter for a Internet Influencer who went by the name "Hulky"`,
+      imgUrl: Joker,
+    },
+    {
+      title: "Ninja",
+      description: "Social Media Revamp for Youtube and Twitter",
+      imgUrl: Ninja,
+    },
+    {
+      title: "Red Reserve",
+      description: "Social Media Revamp for Twitter",
+      imgUrl: RedReserve,
+    },
+    {
+      title: "TE - Titan Empire",
+      description: "Social Media Revamp for Youtube and Twitter",
+      imgUrl: TE,
+    },
+    {
+      title: "Soylent Brands",
+      description: "Social Media Revamp for Twitter",
+      imgUrl: Soylent,
     },
   ];
 
@@ -92,7 +131,7 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
@@ -102,13 +141,11 @@ export const Projects = () => {
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {SocialMediaRevamps.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

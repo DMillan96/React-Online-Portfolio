@@ -48,12 +48,12 @@ export const Skills = () => {
     {
       id: "java",
       src: java,
-      title: "java",
+      title: "Java",
     },
     {
       id: "asp.net",
       src: aspnet,
-      title: "asp.net",
+      title: "ASP.net",
     },
     {
       id: "postgresql",
@@ -139,7 +139,7 @@ export const Skills = () => {
                           <img
                             src={src}
                             alt={title}
-                            className={id.includes("node") ? "node" : ""}
+                            className={id.includes("java") ? "java" : ""}
                           ></img>
                         </div>
                       </div>
