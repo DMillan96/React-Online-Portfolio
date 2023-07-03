@@ -55,7 +55,7 @@ export const Projects = () => {
     },
     {
       title: "Joker",
-      description: `Social Media Revamp for Youtube and Twitter for a Internet Influencer who went by the name "Hulky"`,
+      description: `Social Media Revamp for Youtube and Twitter"`,
       imgUrl: Joker,
     },
     {

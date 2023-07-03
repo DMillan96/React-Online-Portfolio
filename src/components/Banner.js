@@ -73,8 +73,12 @@ export const Banner = () => {
     <section className="banner" id="home">
       {/*<img className="banner-bg" src={bannerBG} alt="light" />*/}
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+        <Row
+          className={
+            isMobile ? "align-items-center mobile-banner" : "align-items-center"
+          }
+        >
+          <Col xs={12} xl={7}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div

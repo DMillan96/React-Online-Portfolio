@@ -5,7 +5,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-  background-color: linear-gradient(90.21deg, #f3f6f3 -5.91%, #c7c6b9 250%);
+  background: linear-gradient(90.21deg, #f3f6f3 -5.91%, #c7c6b9 250%);
 }
 
 @media (max-width: 768px) {
@@ -169,7 +169,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background: #121212;
 }
 
 nav.navbar.scrolled .navbar-nav a.nav-link.navbar-link {
@@ -250,4 +250,8 @@ nav.navbar.scrolled .social-icon a::before {
 
 nav.navbar.scrolled .social-icon a:hover::before {
   transform: scale(1);
+}
+
+.scrolled .navbar-toggler {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }

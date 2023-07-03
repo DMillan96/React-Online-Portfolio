@@ -1,0 +1,54 @@
+{
+    "education_section": {
+      "title": "Education",
+      "education_history": {
+        "university": "Westfield State University",
+        "university_location": "Westfield, MA",
+        "graduation_date": "May 2018",
+        "degree_earned": "Bachelor of Science, Computer Science"
+      }
+    },
+    "employment_section": {
+      "title": "Experience",
+      "employment_history": [
+        {
+          "occupation": "Frontend Developer",
+          "employer": " MassMutual Financial Group",
+          "start_date": "Sept. 2018",
+          "end_date": "Present",
+          "job_details": 
+            ["Developed and maintained several web applications from frontend to backend",
+             "Collaborated with cross-functional teams to deliver high-quality products.",
+             "Worked collaboratively with business personnel and design team to produce functional and exceptional UI/UX",
+             "Facilitated customization of systems by encouraging the team to adopt emerging standards for software application development architecture and tools.",
+             "Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.",
+             "Worked with Git to manage version control and code collaboration.",
+             "Work in Agile/Scrum environment."]
+        }
+        ,
+        {
+            "occupation": "Frontend Developer Intern",
+            "employer": "Westfield State University",
+            "start_date": "Jan. 2018",
+            "end_date": "May 2018",
+            "job_details": [
+                "Created functional requirements with faculty and staff",
+                "Designed UI/UX for Mathematics Department",
+                "Developed and deployed new website for Mathematics Department (using HTML, CSS, JavaScript, JQuery)  Gather feedback from faculty and staff to make final adjustments",
+                "Cleaned and reorganized redundant files within server"]
+        },
+        {
+            "occupation": "Application Developer",
+            "employer": "MSL Services Inc",
+            "start_date": "July 2017",
+            "end_date": "August 2017",
+            "job_details": [
+              "Created functional requirements with Owner to establish basic needs",
+              "Design/Develop UI/UX (JavaFX)",
+              "Developed a software that kept record of clients/services",
+              "Connected software to local database (SQL)"
+            ]
+        }
+        
+    ]}
+  }
